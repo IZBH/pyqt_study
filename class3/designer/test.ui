@@ -11,24 +11,40 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>学点编程吧</string>
+   <string>pyqt</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>xddcb8.ico</normaloff>xddcb8.ico</iconset>
+    <normaloff>icon.ico</normaloff>icon.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>240</y>
+      <x>200</x>
+      <y>210</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>&lt;b&gt;点击这里猜数字&lt;/b&gt;</string>
+    </property>
     <property name="text">
-     <string>退出</string>
+     <string>我猜</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>160</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>在这里输入数字</string>
     </property>
    </widget>
   </widget>
@@ -45,22 +61,5 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>259</x>
-     <y>273</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>260</x>
-     <y>491</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
