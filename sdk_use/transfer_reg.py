@@ -63,7 +63,7 @@ class RegTransfer:
                 else:
                     reg_name = reg_name[self.start:self.end]
 
-            all_reg += self.var_type + reg_name + ';\n'
+            all_reg += self.var_type + ' ' + reg_name + ';\n'
 
         self.out = self.struct_type + all_reg + '} ' + self.peripherals
 
